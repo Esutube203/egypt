@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Trip Form - Japan</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="glass-container">
+        <nav class="tabs">
+            <a href="egypt.html" class="tab">Egypt</a>
+            <a href="japan.html" class="tab active">Japan</a>
+        </nav>
+
+        <form>
+            <h1>Japan Adventure</h1>
+            <p>Your journey to the land of the rising sun starts here.</p>
+
+            <div class="input-box">
+                <label id="email-label">Email</label>
+                <input type="email" name="email" required placeholder="ischool@gmail.com">
+            </div>
+
+            <div class="input-box">
+                <label id="number-label">phone number</label>
+                <input type="number" name="number" required placeholder="phone number">
+            </div>
+
+            <div class="section">
+                <label>Gender</label>
+                <div class="flex-row">
+                    <input type="radio" name="gender" id="m-j" value="male"><label for="m-j">male</label>
+                    <input type="radio" name="gender" id="f-j" value="female"><label for="f-j">female</label>
+                </div>
+            </div>
+
+            <div class="input-box">
+                <label for="date">Departure Date</label>
+                <input type="date" name="date" id="date">
+            </div>
+
+            <div class="file-grid">
+                <div class="input-box"><label>Passport</label><input type="file"></div>
+                <div class="input-box"><label>Visa</label><input type="file"></div>
+            </div>
+
+            <div class="column">
+                <div class="section">
+                    <label>Services Needed</label>
+                    <div class="check-wrap">
+                        <input type="checkbox" id="rc-j"><label for="rc-j">Rental Car</label>
+                    </div>
+                    <div class="check-wrap">
+                        <input type="checkbox" id="ht-j"><label for="ht-j">Hotel Accomadations</label>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <label>Travel Method</label>
+                    <div class="flex-row">
+                        <input type="radio" name="tr-j" id="pl-j"><label for="pl-j">Plane</label>
+                        <input type="radio" name="tr-j" id="bt-j"><label for="bt-j">Bullet Train</label>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label>Leave a Message</label>
+                    <textarea></textarea>
+                </div>
+            </div>
+
+            <button type="submit" class="cool-btn">Confirm Japan Booking</button>
+        </form>
+    </div>
+</body>
+</html>

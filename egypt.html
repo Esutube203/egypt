@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form>
+        <h1>Plan Your Adventure</h1>
+        <p>Please fill out the form below to book your next trip.</p>
+ <nav class="tabs">
+            <a href="egypt.html" class="tab">Egypt</a>
+            <a href="japan.html" class="tab active">Japan</a>
+        </nav>
+        <section>
+            <div class="input-group">
+                <label id="email-label">Email</label>
+                <input type="email" id="email" name="email" required placeholder="ischool@gmail.com">
+            </div>
+
+            <div class="input-group">
+                <label id="number-label">Phone Number</label>
+                <input type="number" id="number" name="number" required placeholder="Phone number">
+            </div>
+
+            <div class="input-group">
+                <label>Gender</label>
+                <div class="radio-group">
+                    <input type="radio" name="gender" id="male" value="male">
+                    <label for="male" id="male-label" class="inline-label">Male</label>
+                    
+                    <input type="radio" name="gender" id="female" value="female">
+                    <label for="female" id="female-label" class="inline-label">Female</label>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <div class="input-group">
+                <label for="date">Departure Date</label>
+                <input type="date" name="date" id="date">
+            </div>
+
+            <div class="file-section">
+                <div class="input-group">
+                    <label for="file">Passport</label>
+                    <input id="file" type="file" name="file">
+                </div>
+                <div class="input-group">
+                    <label for="visa-file">Visa</label>
+                    <input id="visa-file" type="file" name="file">
+                </div>
+            </div>
+        </section>
+
+        <div class="column">
+            <div class="input-group">
+                <label><strong>Please check the services that you need</strong></label>
+                <div class="checkbox-item">
+                    <input type="checkbox" name="Rental-Car" id="Rental-Car">
+                    <label class="inline-label" for="Rental-Car">Rental Car</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" name="Hotel-Accomadations" id="Hotel-Accomadations">
+                    <label class="inline-label" for="Hotel-Accomadations">Hotel Accommodations</label>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label><strong>How will you travel?</strong></label>
+                <div class="radio-row">
+                    <input type="radio" name="How-will-you-travel" id="Plane" value="Plane">
+                    <label class="inline-label" for="Plane">Plane</label>
+
+                    <input type="radio" name="How-will-you-travel" id="Train" value="Train">
+                    <label class="inline-label" for="Train">Train</label>
+
+                    <input type="radio" name="How-will-you-travel" id="Bus" value="Bus">
+                    <label class="inline-label" for="Bus">Bus</label>
+
+                    <input type="radio" name="How-will-you-travel" id="Car" value="Car">
+                    <label class="inline-label" for="Car">Car</label>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label><strong>Payment Arrangement</strong></label>
+                <div>
+                    <input type="radio" name="What-kind-of-payment" id="BOOK-NOW" value="BOOK NOW">
+                    <label class="inline-label" for="BOOK-NOW">BOOK NOW, PAY NOW</label>
+                </div>
+                <div>
+                    <input type="radio" name="What-kind-of-payment" id="DEPOSIT-NOW" value="DEPOSIT NOW">
+                    <label class="inline-label" for="DEPOSIT-NOW">DEPOSIT NOW, PAY INSTALLMENTS</label>
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <div class="input-group">
+                <label><strong>How would you like to be contacted?</strong></label>
+                <div class="radio-row">
+                    <input type="radio" name="How-would-you-like-to-be-contacted" id="Email-Contact" value="Email">
+                    <label class="inline-label" for="Email-Contact">Email</label>
+
+                    <input type="radio" name="How-would-you-like-to-be-contacted" id="Phone-Contact" value="Phone">
+                    <label class="inline-label" for="Phone-Contact">Phone</label>
+
+                    <input type="radio" name="How-would-you-like-to-be-contacted" id="Text-Contact" value="Text">
+                    <label class="inline-label" for="Text-Contact">Text Messaging</label>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="url">Personal Website</label>
+                <input type="url" id="url" name="url" placeholder="https://example.com">
+            </div>
+
+            <div class="input-group">
+                <label for="the-message">Leave a Message</label>
+                <textarea name="message" id="the-message" rows="4"></textarea>
+            </div>
+
+            <div class="newsletter-box">
+                <input type="checkbox" name="newsletter" id="newsletter" value="yes">
+                <label class="inline-label" for="newsletter">Join our mailing list?</label>
+            </div>
+
+            <div class="upload-box">
+                <label for="additional-document">Upload Additional Document:</label>
+                <input type="file" id="additional-document" name="additional-document">
+            </div>
+        </section>
+
+        <button type="submit" class="submit-btn">Submit Trip Request</button>
+    </form>
+
+</body>
+</html>
