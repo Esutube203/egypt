@@ -1,6 +1,115 @@
-#MyVideo{position: fixed ;
-    min-width: 100%;
-    min-height: 100%; 
-    right: 0;
-    bottom: 0;
+body{
+    background-color: peachpuff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav ul {
+    background-color: sandybrown;
+    border-style: solid;
+    padding: 10px;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: papayawhip;
+
+}
+nav ul li{
+ list-style-type: none;
+ display: inline;
+ margin-left: 10px;
+ margin-right: 10px;
+ color: papayawhip;
+}
+nav ul li a{text-decoration: none;
+color: olive;
+};
+/* General page spacing */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f7f7f7;
+}
+
+/* Navigation bar */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px 20px;
+  background: #333;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  color: white;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Main content container */
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+}
+
+/* Article title */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Each section (Pyramids, Khan El Khalili) */
+section {
+  padding: 20px;
+  margin-bottom: 25px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+/* Images */
+section img {
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+}
+ /* Main content container */
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 25px;
+  background: #ffffff;
+  border: 3px solid #e0e0e0;          /* new thicker border */
+  border-radius: 12px;                /* smoother rounded corners */
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
+
+/* Each food section */
+section {
+  padding: 20px;
+  margin-bottom: 25px;
+  background: #fafafa;
+  border: 2px dashed #c7a86f;         /* NEW: dashed border for a warm Egyptian vibe */
+  border-radius: 10px;
+  transition: border 0.3s ease;
+}
+
+/* Hover effect for fun */
+section:hover {
+  border: 2px solid #c7a86f;          /* dashed → solid on hover */
+}
+
+/* Images */
+section img {
+  width: 100%;
+  margin-top: 15px;
+  border: 3px double #8b6f47;         /* NEW: double border for a decorative look */
+  border-radius: 6px;
 }
